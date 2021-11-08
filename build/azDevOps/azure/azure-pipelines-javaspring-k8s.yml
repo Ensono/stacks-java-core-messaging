@@ -10,7 +10,7 @@
 name: "$(Build.SourceBranchName)-init"
 
 pr:
-  - main
+  - develop
 
 trigger:
   branches:
