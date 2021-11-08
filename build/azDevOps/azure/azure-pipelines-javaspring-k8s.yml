@@ -10,18 +10,15 @@
 name: "$(Build.SourceBranchName)-init"
 
 pr:
+  - main
+
+trigger:
   branches:
     include:
+      - 'main'
+  paths:
+    include:
       - '*'
-
-
-#trigger:
-#  branches:
-#    include:
-#      - '*'
-#  paths:
-#    include:
-#      - '*'
 
 resources:
   repositories:
