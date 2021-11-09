@@ -238,7 +238,7 @@ stages:
               functional_test_project_root_dir: "${{ variables.self_functional_testproject_dir }}"
               # Build Output File
               # files to be persisted across stages
-              build_file: true
+              build_file: false
               build_file_path: "${{ variables.build_artifact_deploy_path }}"
               build_file_artefact_name: "${{ variables.build_artifact_deploy_name }}"
               # Functional tests
