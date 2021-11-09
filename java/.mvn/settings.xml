@@ -73,16 +73,6 @@
    |-->
   <servers>
     <server>
-      <id>stacks.releases</id>
-      <username>${artifactory.username}</username>
-      <password>${artifactory.password}</password>
-    </server>
-    <server>
-      <id>stacks.snapshots</id>
-      <username>${artifactory.username}</username>
-      <password>${artifactory.password}</password>
-    </server>
-    <server>
       <id>central</id>
       <username>${artifactory.username}</username>
       <password>${artifactory.password}</password>
@@ -224,14 +214,6 @@
 
     <profile>
       <repositories>
-<!--        <repository>-->
-<!--          <snapshots>-->
-<!--            <enabled>false</enabled>-->
-<!--          </snapshots>-->
-<!--          <id>central</id>-->
-<!--          <name>default-maven-virtual</name>-->
-<!--          <url>https://amidostacks.jfrog.io/artifactory/default-maven-virtual</url>-->
-<!--        </repository>-->
         <repository>
           <snapshots/>
           <id>snapshots</id>
@@ -239,22 +221,6 @@
           <url>https://amidostacks.jfrog.io/artifactory/default-maven-virtual</url>
         </repository>
       </repositories>
-<!--      <pluginRepositories>-->
-<!--        <pluginRepository>-->
-<!--          <snapshots>-->
-<!--            <enabled>false</enabled>-->
-<!--          </snapshots>-->
-<!--          <id>central</id>-->
-<!--          <name>default-maven-virtual</name>-->
-<!--          <url>https://amidostacks.jfrog.io/artifactory/default-maven-virtual</url>-->
-<!--        </pluginRepository>-->
-<!--        <pluginRepository>-->
-<!--          <snapshots/>-->
-<!--          <id>snapshots</id>-->
-<!--          <name>default-maven-virtual</name>-->
-<!--          <url>https://amidostacks.jfrog.io/artifactory/default-maven-virtual</url>-->
-<!--        </pluginRepository>-->
-<!--      </pluginRepositories>-->
       <id>artifactory</id>
     </profile>
   </profiles>
@@ -262,9 +228,9 @@
   <!-- activeProfiles
    | List of profiles that are active for all builds.
    |
-  <activeProfiles>
-    <activeProfile>alwaysActiveProfile</activeProfile>
-    <activeProfile>anotherAlwaysActiveProfile</activeProfile>
-  </activeProfiles>
   -->
+  <activeProfiles>
+    <activeProfile>artifactory</activeProfile>
+  </activeProfiles>
+
 </settings>
