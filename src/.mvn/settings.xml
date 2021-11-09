@@ -224,14 +224,14 @@
 
     <profile>
       <repositories>
-        <repository>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <id>central</id>
-          <name>default-maven-virtual</name>
-          <url>https://amidostacks.jfrog.io/artifactory/default-maven-virtual</url>
-        </repository>
+<!--        <repository>-->
+<!--          <snapshots>-->
+<!--            <enabled>false</enabled>-->
+<!--          </snapshots>-->
+<!--          <id>central</id>-->
+<!--          <name>default-maven-virtual</name>-->
+<!--          <url>https://amidostacks.jfrog.io/artifactory/default-maven-virtual</url>-->
+<!--        </repository>-->
         <repository>
           <snapshots/>
           <id>snapshots</id>
@@ -239,22 +239,22 @@
           <url>https://amidostacks.jfrog.io/artifactory/default-maven-virtual</url>
         </repository>
       </repositories>
-      <pluginRepositories>
-        <pluginRepository>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-          <id>central</id>
-          <name>default-maven-virtual</name>
-          <url>https://amidostacks.jfrog.io/artifactory/default-maven-virtual</url>
-        </pluginRepository>
-        <pluginRepository>
-          <snapshots/>
-          <id>snapshots</id>
-          <name>default-maven-virtual</name>
-          <url>https://amidostacks.jfrog.io/artifactory/default-maven-virtual</url>
-        </pluginRepository>
-      </pluginRepositories>
+<!--      <pluginRepositories>-->
+<!--        <pluginRepository>-->
+<!--          <snapshots>-->
+<!--            <enabled>false</enabled>-->
+<!--          </snapshots>-->
+<!--          <id>central</id>-->
+<!--          <name>default-maven-virtual</name>-->
+<!--          <url>https://amidostacks.jfrog.io/artifactory/default-maven-virtual</url>-->
+<!--        </pluginRepository>-->
+<!--        <pluginRepository>-->
+<!--          <snapshots/>-->
+<!--          <id>snapshots</id>-->
+<!--          <name>default-maven-virtual</name>-->
+<!--          <url>https://amidostacks.jfrog.io/artifactory/default-maven-virtual</url>-->
+<!--        </pluginRepository>-->
+<!--      </pluginRepositories>-->
       <id>artifactory</id>
     </profile>
   </profiles>
