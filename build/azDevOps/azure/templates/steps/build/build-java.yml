@@ -36,6 +36,7 @@ steps:
       arguments: >
         -U "${{ parameters.artifactory_username }}"
         -P "${{ parameters.artifactory_password }}"
+        -S "${{ parameters.maven_settings_file }}"
         -Z "${{ parameters.maven_cache_directory }}"
       workingDirectory: "${{ parameters.project_root_dir }}"
     target:
