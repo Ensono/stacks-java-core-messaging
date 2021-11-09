@@ -44,7 +44,7 @@ steps:
     target:
       container: ${{ parameters.docker_build_container }}
     displayName: "Maven: Install Packages (${{ parameters.project_type }})"
-    
+
   - task: Bash@3
     inputs:
       filePath: "${{ parameters.pipeline_scripts_directory }}/build-maven-archetype.bash"
