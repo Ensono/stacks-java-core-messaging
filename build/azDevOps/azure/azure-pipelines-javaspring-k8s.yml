@@ -52,7 +52,7 @@ stages:
   - stage: Build
     variables:
       # You can find notes in the READMEs around which values to use for each ENV variable group
-      - group: amido-stacks-infra-credentials-nonprod
+      # - group: amido-stacks-infra-credentials-nonprod
       - group: stacks-credentials-nonprod-kv
       - group: amido-stacks-java-api
       - group: amido-stacks-java-cqrs-events-api
