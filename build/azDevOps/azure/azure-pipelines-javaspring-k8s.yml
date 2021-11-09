@@ -155,6 +155,16 @@ variables:
   - name: functional_test_project_type
     value: "Functional API Tests"
 
+  # Sonar
+  - name: sonar_enable
+    value: false
+  - name: sonar_container
+    value: "sonar_scanner"
+  - name: sonar_host_url
+    value: "https://sonarcloud.io"
+  - name: sonar_command
+    value: "sonar-scanner"
+
 stages:
   - stage: Build
     variables:
@@ -217,9 +227,9 @@ stages:
               target_branch_ref: "$(target_branch_ref)"
               pullrequest_number: "$(pullrequest_number)"
               # Sonar
-              sonar_enable: false
-              sonar_container: "sonar_scanner"
-              sonar_host_url: "https://sonarcloud.io"
+              sonar_enable: ${{ variables.sonar_enable }}
+              sonar_container: "${{ variables.sonar_container }}"
+              sonar_host_url: "${{ variables.sonar_host_url }}"
               sonar_project_name: "$(SONAR_PROJECT_NAME)"
               sonar_project_key: "$(SONAR_PROJECT_KEY)"
               sonar_token: "$(SONAR_TOKEN)"
@@ -227,7 +237,7 @@ stages:
               # Probably `GitHub` or `vsts`
               sonar_pullrequest_provider: "GitHub"
               sonar_remote_repo: "${{ variables.self_remote_repo }}"
-              sonar_command: "sonar-scanner"
+              sonar_command: "${{ variables.sonar_command }}"
               # Docker
               docker_image_tag: "${{ variables.docker_image_tag }}"
 
