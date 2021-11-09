@@ -274,8 +274,8 @@ stages:
               vulnerability_scan: "${{ variables.vulnerability_scan }}"
               vulnerability_scan_fail_build_on_detection: "${{ variables.vulnerability_scan_fail_build_on_detection }}"
               project_type: "${{ variables.java_project_type }}"
-      - job: ModuleBuild
-        dependsOn: AppInfraDev
+      - job: ArchetypeBuild
+        dependsOn: ModuleBuild
         pool:
           vmImage: $(pool_vm_image)
         steps:
