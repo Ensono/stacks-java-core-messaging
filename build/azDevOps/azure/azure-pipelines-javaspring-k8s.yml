@@ -242,7 +242,7 @@ stages:
               target_branch_ref: "$(target_branch_ref)"
               pullrequest_number: "$(pullrequest_number)"
               # Sonar
-              sonar_enable: true
+              sonar_enable: false
               sonar_container: "sonar_scanner"
               sonar_host_url: "https://sonarcloud.io"
               sonar_project_name: "$(SONAR_PROJECT_NAME)"
