@@ -9,10 +9,10 @@
 .gradle
 
 target/
-src/build/
-src/.classpath
-src/.project
-src/.settings/
+java/src/build/
+java/src/.classpath
+java/src/.project
+java/src/.settings/
 
 node_modules/
 /.idea/
