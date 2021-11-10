@@ -56,6 +56,7 @@ stages:
       - group: stacks-credentials-nonprod-kv
       - group: amido-stacks-java-modules
     jobs:
+      # Compile, test and deploy to an artifact repository the Java module
       - job: ModuleBuild
         pool:
           vmImage: $(pool_vm_image)
@@ -142,6 +143,7 @@ stages:
               java_project_type: "${{ variables.java_project_type }}"
               functional_test_project_type: "${{ variables.functional_test_project_type }}"
 
+      # Build, test and deploy to an artifact repository the archetype based on the Java module
       - job: ArchetypeBuild
         dependsOn: ModuleBuild
         pool:
