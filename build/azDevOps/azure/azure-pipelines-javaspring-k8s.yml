@@ -25,7 +25,8 @@ resources:
     - repository: templates
       type: github
       name: amido/stacks-pipeline-templates
-      ref: maven-install-for-modules
+#      ref: maven-install-for-modules
+      ref: feature/yml-template
       # EXCHANGE THIS FOR YOUR OWN ENDPOINT CONNECTION TO GITHUB
       # REPOSITORY IS PUBLIC
       endpoint: amidostacks
@@ -156,7 +157,7 @@ stages:
             displayName: 'Update: Build Number'
 
           # Validates all YAML files in the repo to check they adhere to standards
-          - template: templates/steps/build/test-validate-yaml.yml
+          - template: "${{ variables.self_pipeline_templates_dir }}/test-validate-yaml.yml
             parameters:
               pipeline_scripts_directory: "${{ variables.self_pipeline_scripts_dir }}"
               container: "k8s_deploy"

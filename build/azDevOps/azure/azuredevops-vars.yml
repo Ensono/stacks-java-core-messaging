@@ -43,6 +43,8 @@ variables:
     value: "$(Agent.BuildDirectory)/s/stacks-pipeline-templates"
   - name: self_pipeline_scripts_dir
     value: "$(self_pipeline_repo)/scripts"
+  - name: self_pipeline_templates_dir
+    value: "$(self_pipeline_repo)/templates"
 
   # Versioning
   - name: version_major
