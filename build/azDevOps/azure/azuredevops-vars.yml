@@ -101,6 +101,12 @@ variables:
   - name: maven_repository_server
     value: stacks.releases::https://amidostacks.jfrog.io/artifactory/default-maven-local
 
+  # Test
+  - name: functional_test
+    value: false
+  -name: coverage_test
+    value: false
+
   # Vulnerability Scan
   - name: vulnerability_scan
     value: true
@@ -117,7 +123,7 @@ variables:
 
   # Build Task Naming
   - name: java_project_type
-    value: "Java Module [Messaging]"
+    value: "Stacks Java Messaging module"
   - name: functional_test_project_type
     value: "Functional API Tests"
 
