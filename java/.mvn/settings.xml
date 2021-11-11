@@ -73,16 +73,6 @@
    |-->
   <servers>
     <server>
-      <id>stacks.releases</id>
-      <username>${artifactory.username}</username>
-      <password>${artifactory.password}</password>
-    </server>
-    <server>
-      <id>stacks.snapshots</id>
-      <username>${artifactory.username}</username>
-      <password>${artifactory.password}</password>
-    </server>
-    <server>
       <id>central</id>
       <username>${artifactory.username}</username>
       <password>${artifactory.password}</password>
@@ -240,7 +230,6 @@
    |
   -->
   <activeProfiles>
-    <activeProfile>alwaysActiveProfile</activeProfile>
     <activeProfile>artifactory</activeProfile>
   </activeProfiles>
 
