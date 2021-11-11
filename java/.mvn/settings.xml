@@ -82,6 +82,16 @@
       <username>${artifactory.username}</username>
       <password>${artifactory.password}</password>
     </server>
+    <server>
+      <id>central</id>
+      <username>${artifactory.username}</username>
+      <password>${artifactory.password}</password>
+    </server>
+    <server>
+      <id>snapshots</id>
+      <username>${artifactory.username}</username>
+      <password>${artifactory.password}</password>
+    </server>
   </servers>
 
   <!-- mirrors
