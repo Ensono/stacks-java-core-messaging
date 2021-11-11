@@ -55,6 +55,7 @@ stages:
       # You can find notes in the READMEs around which values to use for each ENV variable group
       - group: stacks-credentials-nonprod-kv
       - group: amido-stacks-java-modules
+      - group: amido-stacks-java-modules-messaging
     jobs:
       # Compile, test and deploy to an artifact repository the Java module
       - job: ModuleBuild
