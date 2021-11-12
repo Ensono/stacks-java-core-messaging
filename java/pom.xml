@@ -7,7 +7,7 @@
   <parent>
     <artifactId>stacks-java-module-parent</artifactId>
     <groupId>com.amido</groupId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>0.0.14-main</version>
   </parent>
 
   <artifactId>stacks-core-messaging</artifactId>
@@ -18,7 +18,7 @@
   <packaging>jar</packaging>
 
   <properties>
-    <stacks.core.commons.version>1.0.0-SNAPSHOT</stacks.core.commons.version>
+    <stacks.core.commons.version>0.0.7-main</stacks.core.commons.version>
   </properties>
 
   <repositories>
@@ -36,6 +36,11 @@
       <groupId>com.amido</groupId>
       <artifactId>stacks-core-commons</artifactId>
       <version>${stacks.core.commons.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
     </dependency>
 
     <dependency>
