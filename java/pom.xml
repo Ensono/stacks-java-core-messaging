@@ -5,9 +5,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>stacks-java-module-parent</artifactId>
-    <groupId>com.amido</groupId>
-    <version>0.0.14-main</version>
+    <groupId>com.amido.stacks.modules</groupId>
+    <artifactId>stacks-modules-parent</artifactId>
+    <version>0.0.18-main</version>
   </parent>
 
   <artifactId>stacks-core-messaging</artifactId>
@@ -18,7 +18,7 @@
   <packaging>jar</packaging>
 
   <properties>
-    <stacks.core.commons.version>0.0.7-main</stacks.core.commons.version>
+    <stacks.core.commons.version>0.0.13-main</stacks.core.commons.version>
   </properties>
 
   <repositories>
@@ -33,7 +33,7 @@
   <dependencies>
 
     <dependency>
-      <groupId>com.amido</groupId>
+      <groupId>com.amido.stacks.modules</groupId>
       <artifactId>stacks-core-commons</artifactId>
       <version>${stacks.core.commons.version}</version>
     </dependency>
