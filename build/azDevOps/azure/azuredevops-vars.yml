@@ -62,9 +62,9 @@ variables:
     value: 0
   - name: build_type
     ${{ if eq( variables['Build.SourceBranchName'], 'main' ) }}:
-      value: "releases"
+      value: "RELEASE"
     ${{ if ne( variables['Build.SourceBranchName'], 'main' ) }}:
-      value: "snapshots"
+      value: "SNAPSHOT"
 
   # PR / Branch vars
   - name: source_branch_ref
